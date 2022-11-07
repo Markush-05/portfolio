@@ -1,0 +1,155 @@
+.welcome {
+  height: 100vh;
+  min-height: 568px;
+  position: relative;
+
+  @media not all and (hover:hover) {
+    height: var(--app-height);
+    max-height:  var(--app-height);
+  }
+
+  &__img-w {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      content: '';
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 10;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__cont {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 15px 30px;
+    position: relative;
+    z-index: 100;
+    height: 100%;
+  }
+
+  &__inner {
+    color: #E7E7E7;
+    text-align: center;
+
+    p {
+      margin: 0;
+      font-size: 22px;
+    }
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0 0 7px;
+    color: #fff;
+
+    b {
+      font-weight: 700;
+      color: $colorYellow;
+    }
+  }
+
+  &__btn-group {
+    text-align: center;
+    margin: 45px 0 0;
+
+    .btn,
+    .btn-r  {
+      width: 138px;
+      margin: 0 10px;
+    }
+  }
+
+  &__guarantee-w {
+    width: 206px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+  }
+
+  &__guarantee {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media(max-width: 1280px) {
+  .welcome {
+    max-height: 700px;
+
+    &__guarantee-w {
+      width: 150px;
+    }
+
+    &__cont {
+      padding-top: 80px;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__inner {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .welcome {
+    max-height: none;
+  }
+}
+
+@media(max-width: 768px) {
+  .welcome {
+    
+    &__title {
+      font-size: 30px;
+    }
+
+    &__inner {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    &__btn-group {
+      margin-top: 30px;
+    }
+
+    &__cont {
+      padding-top: 0;
+    }
+  }
+}
+
+@media(max-width: 568px) {
+  .welcome__btn-group .btn, .welcome__btn-group .btn-r {
+    width: calc(50% - 10px);
+    margin: 0 5px;
+  }
+}

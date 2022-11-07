@@ -1,0 +1,180 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0;
+    font-weight: 700;
+}
+h1{
+    font-style: normal;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 24px;
+}
+
+h2{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 19px;
+}
+
+h3{
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 12px;
+}
+h4{
+    margin-bottom: 11px;
+    font-size: 16px;
+    line-height: 20px;
+}
+h5 {
+    margin-bottom: 12px;
+}
+
+p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 5px 0;
+}
+
+
+ol, ul{
+    margin: 0 0 15px 0;
+    padding: 0 0 0 20px;
+}
+
+ol li::marker {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    /* margin-right: 5px; */
+}
+
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    margin-left: 12px;
+    transform: scale(0.3);
+}
+a:hover{
+    color: #FB6D3A !important;
+}
+img{
+    margin-bottom: 52px;
+    transition: 0.3s all ease;
+    object-fit: cover;
+}
+img:hover{
+    
+    transform: scale(1.1);
+}
+
+ol li span {
+    color: #A8A8A8;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+
+ul li::marker {
+    color: #595959;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.title-orange{
+    color: #FB6D3A;
+}
+.title-bold {
+    margin: 0;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* Main Styles */
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #F5F7FA;
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+/* main-content Styles */
+.main-content{
+    background-color: #fff;
+    padding-left: 88px;
+    padding-top: 100px;
+    padding-right: 131px;
+}
+
+/* about Styles */
+.about {
+    max-width: 400px;
+    margin-bottom: 40px;   
+}
+/* Projekts Styles */
+.projekts {
+    max-width: 485px;
+    margin-bottom: 51px;
+}
+/* work Styles */
+.work {
+    max-width: 525px;
+}
+/* education Styles */
+.education {
+}
+/* sidebar Styles */
+.sidebar{
+    padding-top: 40px;
+    background-color: #1E2939;
+    color: #FFFFFF;
+}
+.sidebar > div{
+    margin-bottom: 44px;
+    padding-left: 40px;
+}
+
+.sidebar li{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.sidebar li::marker{
+    color: #FB6D3A;
+}
+/* company Styles */
+.company{
+    margin-bottom: 30px;
+}
+
+.company p{
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+}
+
+/* contact styles */
+.contact a{
+    color: #fff;
+    opacity: 0.5;
+}
+
+
+.decor-underline{
+    text-decoration: underline;
+}
+
+

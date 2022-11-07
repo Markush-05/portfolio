@@ -1,0 +1,152 @@
+.phone-y {
+  background: $colorYellow;
+  position: relative;
+
+  &--bg {
+    background: url("#{$rootUrl}phone-bg-fb.jpg") no-repeat center;
+    background-size: cover;
+
+    .phone-y__socials-link {
+      &:hover {
+        color: $colorYellow-2;
+      }
+    }
+  }
+
+  &--line {
+    overflow: hidden;
+
+    &:before {
+      width: 238px;
+      height: 187px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -119px;
+      background: url("#{$rootUrl}phone-line.svg") no-repeat center;
+      background-size: cover;
+      content: "";
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #fff;
+    padding: 50px 0;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 1;
+    margin: 0 0 5px;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+  }
+
+  &__phone {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 46px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 10px;
+    line-height: 1;
+    transition: 0.3s color ease;
+
+    &:hover {
+      color: #333;
+    }
+  }
+
+  &__socials {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    &-item {
+      margin: 0 10px;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      font-size: 20px;
+      transition: 0.3s color ease;
+
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .phone-y--line:before {
+    display: none;
+  }
+}
+
+@media(max-width: 1024px) {
+  .phone-y {
+    &__phone,
+    &__title {
+      font-size: 36px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    &__socials {
+      &-link {
+        font-size: 18px;
+        font-weight: normal;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    &__inner {
+      padding: 30px 0;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .phone-y {
+    &__phone,
+    &__title {
+      font-size: 26px;
+    }
+
+    &__inner {
+      padding: 30px 0;
+    }
+
+    .col-auto {
+      flex: 0 0 100%;
+      text-align: center;
+
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Helvetica Neue Cond';
+  src: url('#{$rootUrlFonts}HelveticaNeue/HelveticaNeueBoldCondensed.eot');
+  src: local('Helvetica Neue Condensed Bold'), local('HelveticaNeueBoldCondensed'),
+  url('#{$rootUrlFonts}HelveticaNeue/HelveticaNeueBoldCondensed.eot?#iefix') format('embedded-opentype'),
+  url('#{$rootUrlFonts}HelveticaNeue/HelveticaNeueBoldCondensed.woff2') format('woff2'),
+  url('#{$rootUrlFonts}HelveticaNeue/HelveticaNeueBoldCondensed.woff') format('woff'),
+  url('#{$rootUrlFonts}HelveticaNeue/HelveticaNeueBoldCondensed.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
